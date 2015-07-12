@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+  Created by margish on 5/29/15.
+-->
+<s:DefaultGridHeaderRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+  <s:DropDownList id="dropDownList" width="{column.width}" change="dispatchEvent(new SimpleCustomEvent(SimpleCustomEvent.HEADER_DROP_DOWN_INDEX_CHANGED, this))">
+      <s:dataProvider>
+          <s:ArrayList>
+              <fx:Object>{Const.BLANK}</fx:Object>
+              <fx:Object>{Const.MANUFACTURER_PN}</fx:Object>
+              <fx:Object>{Const.MANUFACTURER_PN_2}</fx:Object>
+              <fx:Object>{Const.MANUFACTURER_PN_3}</fx:Object>
+              <fx:Object>{Const.SCHEMATICS}</fx:Object>
+              <fx:Object>{Const.QUANTITY}</fx:Object>
+              <fx:Object>{Const.MANUFACTURER}</fx:Object>
+          </s:ArrayList>
+      </s:dataProvider>
+  </s:DropDownList>
+    <fx:Script><![CDATA[
+        import com.mk.events.SimpleCustomEvent;
+        import com.mk.utils.Const;
+        ]]></fx:Script>
+</s:DefaultGridHeaderRenderer>
