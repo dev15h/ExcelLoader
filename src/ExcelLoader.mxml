@@ -74,8 +74,8 @@
             parameters["lotQtyList"] = lotQtyList;
 
             //TEMP. REMOVE IN FINAL VERSION
-            if (new Date().getFullYear() != 2015 && new Date().getMonth() > 8)
-                return;
+            //if (new Date().getFullYear() != 2015 && new Date().getMonth() > 8)
+            //    return;
 
             submitSelection.send(parameters);
         }
